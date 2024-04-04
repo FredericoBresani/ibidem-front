@@ -1,0 +1,386 @@
+@import '../../../styles.scss';
+
+
+.global {
+  background-color: $white-light-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  .course {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100%;
+    .cape {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 0 0 0;
+      @media(max-width: 750px) {
+        flex-direction: column;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
+        gap: 1rem;
+        padding: 0 8rem 0 8rem;
+        h2 {
+          font-family: $comfortaa;
+          font-size: 28px;
+          font-weight: bolder;
+          text-align: center;
+        }
+        h3 {
+          color: $white-light-dark-letters;
+          font-family: $comfortaa;
+          font-size: 15px;
+          text-align: center;
+        }
+        .buy-it {
+          display: flex;
+          width: 10rem;
+          height: 3rem;
+          border: none;
+          cursor: pointer;
+          font-weight: bolder;
+          margin: 1.5rem 0 0 0;
+          border-radius: 0.7rem;
+          background: linear-gradient(to right, #839E3E, #9CBD4A);
+          color: white;
+          padding: 10px auto;
+          text-decoration: none;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+          @media (max-width: 350px) {
+              width: 100%;
+          }
+          button {
+              cursor: pointer;
+              box-shadow: 0 0 0 0;
+              border: 0 none;
+              outline: 0;
+              background-color: transparent;
+              text-decoration: none;
+              color: white;
+              font-size: 16px;
+              font-family: $comfortaa;
+          }
+        }
+        .buy-it:hover {
+            background: linear-gradient(to right, #231123, #703770 );
+            border: none;
+        }
+      }
+      .trailer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0 0 0;
+        flex: 1;
+        @media(max-width: 750px) {
+          flex-direction: column;
+          width: 75%;
+        }
+        video {
+          width: 85%;
+          @media(max-width: 750px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .about {
+      border-top: solid 1px rgb(206, 206, 206);
+      margin: 4rem 0 0 0;
+      padding: 2rem 0 0 0;
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0 1.5rem 0;
+        h2 {
+          font-family: $comfortaa;
+          font-size: 25px;
+        }
+      }
+      .triple-division {
+        display: flex;
+        justify-content: center;
+        margin: 0 0 2rem 0;
+        gap: 1rem;
+        @media (max-width: 620px) {
+          flex-direction: column;
+          align-items: center;
+        }
+        .triple-separator {
+          width: 1px;
+          border-radius: 1rem;
+          min-height: 100%;
+          background-color: rgb(203, 203, 203);
+          margin: 0 1% 0 1%;
+          @media (max-width: 1050px) {
+            margin: 0 0 0 0;
+          }
+          @media (max-width: 620px) {
+            width: 40%;
+            height: 1px;
+          }
+        }
+        .objective, .details, .includes {
+          width: 25rem;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: column;
+          @media(max-width: 820px) {
+            width: 80%;
+          }
+          .title {
+            margin: 1rem 0;
+            h4 {
+              font-family: $comfortaa;
+              text-align: center;
+              font-size: 18px;
+            }
+          }
+          ul {
+            list-style: none;
+            padding: 0 1rem;
+            li {
+              display: flex;
+              align-items: flex-start;
+              gap: 0.4rem;
+              margin: 0 0 0.6rem 0;
+              img {
+                width: 1.1rem;
+              }
+              p {
+                font-family: $raleway;
+              }
+            }
+          }
+          p {
+            font-family: $raleway;
+            @media(max-width: 820px) {
+              font-size: 12px;
+            }
+            @media(max-width: 620px) {
+              font-size: 14px;
+            }
+          }
+        }
+        .objective {
+          background-color: white;
+          p {
+            padding: 0 1rem;
+            font-family: $raleway;
+            @media(max-width: 620px) {
+              padding: 0 0 0 1.2rem;
+            }
+          }
+        }
+        .details {
+          background-color: white;
+          ul {
+            li {
+              p {
+
+              }
+            }
+          }
+        }
+        .includes {
+          background-color: white;
+          ul {
+            li {
+              p {
+
+              }
+            }
+          }
+        }
+      }
+      .characteristics {
+        display: grid;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        grid-template-rows: [first] 8rem [second] 8rem [end];
+        grid-template-columns: [first] 25% [second] 25% [second] 25% [end];
+        column-gap: 2rem;
+        row-gap: 1rem;
+        margin: 3rem 0;
+        @media(max-width: 620px) {
+          grid-template-rows: [first] 8rem [second] 8rem [third] 8rem [end];
+          grid-template-columns: [first] 37% [second] 37% [end];
+
+        }
+        @media(max-width: 400px) {
+          grid-template-rows: [first] 8rem [second] 8rem [third] 8rem
+                              [fourth] 8rem [fifith] 8rem [sixth] 8rem [end];
+          grid-template-columns: [first] 80% [end];
+        }
+        .grid-cell {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .characteristic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90%;
+            height: 4.5rem;
+            max-height: 4.5rem;
+            min-height: 4.5rem;
+            background-color: rgb(238, 238, 238);
+            padding: 1px 1px;
+            cursor: pointer;
+            position: relative;
+            @media (max-width: 825px) {
+              width: 95%;
+            }
+            h4 {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 100%;
+              height: 100%;
+              font-family: $comfortaa;
+              font-size: 14px;
+              text-align: center;
+              background-color: rgb(250, 250, 250);
+              padding: 1.25rem 0.5rem;
+              @media(max-width: 700px) {
+                font-size: 12px;
+              }
+            }
+            .list {
+              display: flex;
+              opacity: 0;
+              align-items: flex-start;
+              justify-content: center;
+              position: absolute;
+              left: 0;
+              top: 0;
+              width: 0;
+              background-color: rgb(238, 238, 238);
+              padding: 0 1px 1px 1px;
+              transition: all .2s ease;
+              z-index: 0;
+              .answers {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                width: 100%;
+                background-color: white;
+                padding: 0.5rem 0;
+                gap: 0.7rem;
+                li {
+                  display: flex;
+                  padding: 0 0.4rem 0.2rem 0.4rem;
+                  p {
+                    font-family: $raleway;
+                    font-size: 14px;
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+            .list-show {
+              overflow: scroll;
+              overflow-y: scroll;
+              opacity: 1;
+              width: 100%;
+              top: 100%;
+              max-height: 12rem;
+              z-index: 1;
+            }
+          }
+          .characteristic-selected {
+            h4 {
+              background-color: rgb(238, 238, 238);
+            }
+          }
+        }
+
+      }
+    }
+    .content-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 1rem 0 0 0;
+      padding: 4rem 0 0 0;
+      border-top: solid 1px rgb(238, 238, 238);
+      h2 {
+        font-family: $comfortaa;
+        font-size: 25px;
+      }
+    }
+    .buy-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 2rem 0;
+      .custom-buy-button {
+        display: flex;
+        width: 40%;
+        height: 4rem;
+        border: none;
+        cursor: pointer;
+        font-weight: bolder;
+        border-radius: 0.25rem;
+        background: linear-gradient(to right, #839E3E, #9CBD4A);
+        color: white;
+        padding: 10px auto;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.541);
+        @media (max-width: 350px) {
+            width: 80%;
+        }
+        button {
+            cursor: pointer;
+            box-shadow: 0 0 0 0;
+            border: 0 none;
+            outline: 0;
+            background-color: transparent;
+            text-decoration: none;
+            color: white;
+            font-family: $comfortaa;
+            font-size: 25px;
+            font-weight: bolder;
+            @media(max-width: 530px) {
+              font-size: 18px;
+            }
+        }
+      }
+      .custom-buy-button:hover {
+          background: linear-gradient(to right, #231123, #703770 );
+          border: none;
+      }
+    }
+    .evaluate {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 3rem 0;
+      border-top: solid 1px rgb(238, 238, 238);
+      padding: 4rem 0 0 0;
+      h2 {
+        font-family: $comfortaa;
+        font-size: 25px;
+        margin: 1rem 0 0 0;
+      }
+    }
+  }
+}
+

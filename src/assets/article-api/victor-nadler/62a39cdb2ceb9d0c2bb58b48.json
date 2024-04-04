@@ -1,0 +1,149 @@
+{
+  "header": {
+    "title": "5 Habilidades para Aprender Agora",
+    "subtitle": "e que serão ainda mais importantes no futuro",
+    "read_time": 6,
+    "image": {
+        "source": {
+            "link": "https://www.pexels.com/pt-br/foto/arte-materiais-de-arte-materiais-artisticos-artesao-4348401/",
+            "title": "Pexels"
+          },
+        "description": "Mulher desenhando num tablet",
+        "file_name": "mulherDesenhandoNumTablet.jpeg"
+    }
+  },
+  "content": [
+    {"h2": "Introduzindo"},
+    {"p1": "O mercado de trabalho está cada vez mais competitivo, então é preciso se aprimorar constantemente para poder se destacar frente às oportunidades."},
+    {"p1": "Com o avanço da tecnologia, as máquinas tendem a substituir as atividades repetitivas e padronizadas em cerca de 70% nos próximos 20 anos, através de softwares avançados, é isso o que aponta um estudo da Universidade de Oxford."},
+    {"p1": "Por isso, o palestrante e professor de criatividade, Murilo Gun, propôs as 5 habilidades para o mercado de trabalho atual, e que serão ainda mais necessárias no futuro."},
+    {"h3": "Inteligência Criativa"},
+    {"p2": "O que é?"},
+    {"p3": "Dentre as 5 que serão abordadas, Murilo Gun destaca a criativa como prioritária. Para ele, a “criatividade é a imaginação aplicada para a resolução de problemas”."},
+    {"p3": "As empresas nada mais são do que uma organização de pessoas, uma empresa inovadora é uma organização de pessoas criativas."},
+    {"p3": "Se você é criativo, então você é o que as empresas mais precisam."},
+    {"p2": "Onde aprender?"},
+    {"p3": "Matéria: Como ser criativo?"},
+    {"p3": "Vídeo: Sobre criatividade."},
+    {"p3": "Livro: Somos todos criativos, de Ken Robinson (famoso por ter o Ted Talk mais visto no mundo)."},
+    {"p2": "Como aplicar?"},
+    {"p3": "Além das dicas apresentadas acima, para ser criativo é preciso não se contentar com o óbvio e buscar novos caminhos."},
+    {"p3": "“Soluções antigas não resolvem problemas novos, precisamos nos adaptar para criar novas soluções”, portanto, tente formar uma imagem mental de como você poderia resolver certo problema."},
+    {"p3": "As crianças são muito imaginativas, sendo que a escola muitas vezes limita essa capacidade, justamente porque ela apenas propõe a resolução de problemas antigos."},
+    {"p3": "Portanto, para aplicar a criatividade é preciso exercer a capacidade de imaginação, transcrevendo os pensamentos em mapas mentais por exemplo."},
+    {
+      "image": {
+          "source": {
+              "link": "https://www.pexels.com/pt-br/foto/close-da-mao-humana-256514/",
+              "title": "Pexels"
+            },
+          "description": "Um texto falando, seja criativo",
+          "file_name": "seja-criativo.jpeg"
+      }
+    },
+    {"h3": "Inteligência Intra-pessoal"},
+    {"p2": "O que é?"},
+    {"p3": "É uma das inteligências que o Howard Gardner apresentou em sua teoria das múltiplas inteligências. Ela remete à capacidade do ser humano de gerir suas emoções."},
+    {"p2": "Onde aprender?"},
+    {"p3": "Livro: Inteligência emocional de Daniel Goleman."},
+    {"p3": "Matéria: Controle de emoções e sobre reclamar."},
+    {"p3": "Teste aqui sua inteligência emocional, para você conhecer seus comportamentos."},
+    {"p2": "Como aplicar?"},
+    {"p3": "O tópico acima até mostra diversas formas, mas resumidamente, é preciso se esforçar diariamente para controlar as emoções."},
+    {"p3": "A inteligência intra-pessoal é bem abrangente, a autoestima também faz parte dela. Pode parecer clichê, mas é preciso encontrar algo que te motive."},
+    {"p3": "Peça feedbacks para seus conhecidos, se tiver algo no seu emocional que pode ser melhorado, se atente a isso."},
+    {
+      "image": {
+          "source": {
+              "link": "https://www.pexels.com/pt-br/foto/adulto-conselhos-orientacoes-assistencia-4101143/",
+              "title": "Pexels"
+            },
+          "description": "Duas pessoas dando um conselho",
+          "file_name": "conselheiro.jpeg"
+      }
+    },
+    {"h3": "Inteligência Inter-pessoal"},
+    {"p2": "O que é?"},
+    {"p3": "Também desenvolvida por Howard, esta é a capacidade de se relacionar bem com os outros, isto é, entender as emoções/sentimentos das outras pessoas para agir conforme as suas necessidades."},
+    {"p3": "Um bom líder precisa ter esta habilidade bem afiada, visto que ele deve gerir um grupo de pessoas, e entender os outros é fundamental na gestão."},
+    {"p2": "Onde aprender?"},
+    {"p3": "Livro: O corpo fala. Por Roland Tompakow e Pierre Weil."},
+    {"p3": "Vídeo: Competências Essenciais da Liderança."},
+    {"p2": "Como aplicar?"},
+    {"p3": "Seja mais prestativo e desenvolva a empatia, ou seja, procure tratar bem as pessoas, sendo humilde, atencioso, além de elogiar mais vezes."},
+    {
+      "image": {
+          "source": {
+              "link": "https://www.pexels.com/pt-br/foto/grupo-de-pessoas-em-uma-reuniao-1367272/",
+              "title": "Pexels"
+            },
+          "description": "A reunião de uma equipe numa empresa",
+          "file_name": "reuniao-de-empresa.jpeg"
+      }
+    },
+    {"h3": "Inteligência Interartificial"},
+    {"p2": "O que é?"},
+    {"p3": "É a capacidade de se relacionar com a tecnologia, conhecendo as suas potencialidades e utilizando ela a seu favor."},
+    {
+      "image": {
+          "source": {
+              "link": "",
+              "title": "Pexels"
+            },
+          "description": "Gráfico",
+          "file_name": "habilidades-grafico.png"
+      }
+    },
+    {"p2": "Onde aprender?"},
+    {"p3": "Cursos de programação e robótica são interessantes, sendo que a inteligência interartificial é bem mais do que isso, ela abrange todo o conceito de tecnologia."},
+    {"p3": "Livro: Futuro Presente: O mundo movido à tecnologia. Por Guy Perelmuter."},
+    {"p3": "Vídeo: Não É Só Sobre Tecnologias, É Sobre Pessoas!"},
+    {"p3": "Matéria: A melhor ferramenta do mundo e Programação é o novo inglês."},
+    {"p2": "Como aplicar?"},
+    {"p3": "Ter curiosidade é a chave: tente descobrir novas funções do seu computador/celular, por exemplo."},
+    {"p3": "Faça uma pesquisa: procure por apps que facilitem a sua vida, como as ferramentas do Google."},
+    {"p3": "Pergunte às pessoas: você não precisa descobrir tudo sozinho, veja se o seu amigo tem alguma dica para te dar sobre alguma tecnologia interessante."},
+    {"p3": "Gerencie o tempo nas mídias sociais: você precisa de controle sobre a tecnologia para ela não te dominar/viciar."},
+    {
+      "image": {
+          "source": {
+              "link": "https://www.pexels.com/pt-br/foto/mulher-usando-computador-laptop-com-fone-de-ouvido-vr-3861458/",
+              "title": "Pexels"
+            },
+          "description": "Uma mulher usando óculos de realidade virtual",
+          "file_name": "oculos-vr.jpeg"
+      }
+    },
+    {"h3": "Inteligência Aprendedora / Educadora"},
+    {"p2": "O que é?"},
+    {"p3": "Nascemos altamente autodidatas, e com o tempo acabamos diminuindo essa habilidade. A inteligência aprendedora preza pela restauração dessa habilidade, para então, estarmos cada vez mais adaptados frente às mudanças na sociedade."},
+    {"p3": "Simultaneamente temos a inteligência educadora, que é a capacidade de ensinar aquilo que você aprendeu."},
+    {"p3": "Elas estão interligadas por existir uma comunicação entre o processo de aprender e transmitir o aprendizado."},
+    {"p2": "Onde aprender?"},
+    {"p3": "Livro: Aprendendo a Aprender, da Barbara Oakley. Ela é uma professora na Oakland University, seus cursos online sobre aprendizagem são muito populares ao redor do planeta."},
+    {"p2": "Matéria: Como aprender a aprender?"},
+    {"p2": "Vídeo: Como ensinar de maneira eficaz."},
+    {"p2": "Como aplicar?"},
+    {"p3": "Determinação: estimule seu cérebro para aprender cada vez mais, sempre com o objetivo de se tornar mais competente naquilo que faz."},
+    {"p3": "Ensine: não é para ser chato e insistir em ensinar algo que a pessoa não queira ouvir. Você pode começar tentando ensinar crianças e desta forma ir praticando."},
+    {
+      "image": {
+          "source": {
+              "link": "https://www.pexels.com/pt-br/foto/atencao-cuidado-cortesia-quadro-negro-6238038/",
+              "title": "Pexels"
+            },
+          "description": "Uma reunião de estudos",
+          "file_name": "reuniao-de-calculo.jpeg"
+      }
+    },
+    {"h2": "Finalizando"},
+    {"p1": "O próprio Murilo Gun disse sobre as habilidades apresentadas que: 'não existe verdade absoluta' quando se fala do futuro, essa é apenas a minha visão baseada nos meus conhecimentos”. Lembrando que ele foi chamado pela NASA para fazer um estudo."},
+    {"p1": "Curso do Murilo Gun aqui para aprender mais sobre o tema."},
+    {"p1": "Confira o vídeo abaixo que ajudou o Murilo a desenvolver todo o conceito apresentado."},
+    {
+      "video": {
+          "link": "https://www.youtube.com/watch?v=iG9CE55wbtY"
+      }
+    }
+  ]
+}

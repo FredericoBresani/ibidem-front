@@ -1,0 +1,40 @@
+<section class="our-purpose">
+  <div class="title">
+    <h2>Conheça a plataforma que veio para mudar a educação</h2>
+  </div>
+  <div class="learn-easy">
+    <div class="learn">
+      <div class="text">
+        <div class="sub-title">
+          <h3>Aprenda conteúdos relevantes...</h3>
+        </div>
+        <p>Para quem cansou de estudar assuntos sem muita utilidade e quer desenvolver habilidades indispensáveis para a vida.</p>
+      </div>
+      <div class="image">
+        <img src="../../../assets/images/pexels-george-milton-7034394.jpeg">
+      </div>
+    </div>
+    <span class="separator"></span>
+    <div class="easy">
+      <div class="image" *ngIf="!switchFlexDirection">
+        <img src="../../../assets/images/pexels-ivan-samkov-5429025.jpeg">
+      </div>
+      <div class="text">
+        <div class="sub-title">
+          <h3>...E com muita facilidade</h3>
+        </div>
+        <p>Através de uma matriz de conteúdo elaborada por especialistas, você aprende de forma ativa e autônoma conteúdos adequados às suas necessidades.</p>
+      </div>
+      <div class="image" *ngIf="switchFlexDirection">
+        <img src="../../../assets/images/pexels-ivan-samkov-5429025.jpeg">
+      </div>
+    </div>
+  </div>
+  <div class="evolve">
+    <div class="title">
+      <h3>
+        Evolua suas habilidades. Adquira <span class="url" (click)="navigateTo()">nossos cursos</span>!
+      </h3>
+    </div>
+  </div>
+</section>

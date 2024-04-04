@@ -1,0 +1,98 @@
+@import '../../../styles.scss';
+
+.our-purpose {
+  display: flex;
+  flex-direction: column;
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: url('../../../assets/images/pexels-snapwire-6945.jpeg');
+    background-position: 50% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    h2 {
+      color: white;
+      background-color: rgba($color: #000000, $alpha: .6);
+      font-family: $comfortaa;
+      font-size: 30px;
+      width: 100%;
+      text-align: center;
+      padding: 8rem 1rem;
+    }
+  }
+  .learn-easy {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    padding: 3rem 0;
+    .learn, .easy {
+      display: flex;
+      justify-content: center;
+      padding: 0 1rem;
+      @media (max-width: 730px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .image img {
+        width: 25rem;
+        @media (max-width: 730px) {
+          margin: 2rem 0;
+        }
+        @media (max-width: 420px) {
+          width: 100%;
+        }
+      }
+      .text {
+        padding: 0 3rem;
+        width: 60%;
+        @media (max-width: 730px) {
+          width: 100%;
+        }
+        .sub-title {
+          margin: 1rem 0;
+          h3 {
+            font-size: 25px;
+            text-align: center;
+            font-family: $comfortaa;
+          }
+        }
+        p {
+          font-size: 20px;
+          text-align: center;
+          font-family: $raleway;
+        }
+      }
+    }
+    .separator {
+      margin: 1.5rem 1rem;
+      height: 1px;
+      background-color: $grey-light;
+    }
+  }
+  .evolve {
+
+    .title {
+      background: url('../../../assets/images/pexels-alexander-suhorucov-6457579.jpeg');
+      background-position: 50% 23%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      h3 {
+        color: white;
+        background-color: rgba($color: #000000, $alpha: .6);
+        font-family: $comfortaa;
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        padding: 8rem 1rem;
+        .url {
+          cursor: pointer;
+          color: $main-orange;
+        }
+      }
+    }
+  }
+}

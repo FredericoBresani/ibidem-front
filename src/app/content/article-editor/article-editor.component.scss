@@ -1,0 +1,48 @@
+@import '../../../styles.scss';
+
+.fix-flex-display {
+  display: flex;
+  // width: 10rem;
+}
+.fixed-options {
+  position: fixed;
+}
+
+.article-edit {
+  display: flex;
+  flex-direction: column;
+  // width: 10rem;
+  .edit-button-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 0 1rem 1rem;
+    background-color: $light-black-background;
+      .edit-button {
+        cursor: pointer;
+      }
+  }
+  .article-elements {
+    ul {
+      list-style: none;
+      background-color: $main-orange;
+      overflow: scroll;
+      max-height: 40rem;
+      li {
+        cursor: pointer;
+        font-family: $raleway;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.781);
+        margin: 0 0 1px 0;
+        padding: 0.75rem 0.25rem;
+        background-color: white;
+      }
+    }
+  }
+  .article-elements-hidden {
+    display: none;
+  }
+}

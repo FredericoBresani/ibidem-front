@@ -1,0 +1,16 @@
+.body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.3rem 0.3rem;
+  .point {
+    background-color: rgb(23, 23, 23);
+    min-width: .4rem;
+    max-width: .5rem;
+    min-height: .4rem;
+    max-height: .4rem;
+    border-radius: 50%;
+  }
+}

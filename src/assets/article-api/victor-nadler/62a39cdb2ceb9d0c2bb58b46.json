@@ -1,0 +1,115 @@
+{
+  "header": {
+    "title": "Dicas para o Computador",
+    "subtitle": "otimize suas funcionalidades",
+    "read_time": 8,
+    "image": {
+        "source": {
+          "link": "https://www.pexels.com/pt-br/foto/pessoa-digitando-no-teclado-do-computador-2058128/",
+          "title": "Pexels"
+        },
+        "description": "Homem usando computador",
+        "file_name": "dicasParaComputador.jpeg"
+    }
+  },
+  "content": [
+    {"h2": "Introduzindo"},
+    {"p1": "O conteúdo que será fornecido a seguir, é focado no sistema operacional Windows 10. Para outros sistemas, ele pode até ser útil, mas nem tudo será."},
+    {"p1": "Portanto, veja a seguir diversas funcionalidades, dicas e muito mais, para você extrair o máximo de desempenho do seu computador"},
+    {"h3": "Desempenho do Sistema"},
+    {"p2": "É importante entender que, quanto mais programas você abrir, mais memória RAM será consumida, algo que deixa o seu computador lento."},
+    {"p3": "Para esse problema em específico, se limite a usar um programa de cada vez, evitando deixar outros abertos e/ou em segundo plano."},
+    {"p2": "Para esse tópico, encontramos links que fornecem uma explicação clara quanto a outros fatores que atuam no desempenho do computador, confira abaixo:"},
+    {"p3": "Dicas rápidas e simples;"},
+    {"p3": "Dicas Microsoft;"},
+    {"p3": "Games (jogos);"},
+    {"p2": "Otimização geral do PC:"},
+    {
+      "video": {
+          "link": "https://www.youtube.com/watch?v=KD6tkn7iYMk"
+      }
+    },
+    {"h3": "Organização"},
+    {"p2": "Para quem usa o tempo todo o computador, é provável que a pessoa acesse determinados sites com certa frequência. Para isso, existem 3 maneiras de facilitar o acesso deles."},
+    {"p3": "Restaurar abas fechadas: existe uma configuração que permite o computador reabrir as abas do navegador automaticamente, evitando que o usuário tenha que abri-las uma por uma."},
+    {"p4": "Basta ir nas configurações do navegador, pesquisar por “inicialização”, e então marcar a opção “continuar de onde parou”."},
+    {"p3": "Aba de favoritos: organize as suas páginas recorrentes nela, facilitando o acesso."},
+    {"p4": "É só pressionar “Ctrl + D” na página que você deseja adicionar."},
+    {"p3": "Barra de favoritos: posicionada na parte inferior da tela do computador, você pode organizar os programas instalados no seu PC que você usa com frequência."},
+    {"p4": "Para isso, é preciso clicar com o botão direito do mouse no programa desejado, e então procurar por “fixar na barra de tarefas”."},
+    {"h3": "Captura da Tela"},
+    {"p2": "Principalmente para quem usa muito o WhatsApp Web, ter uma ferramenta para isso é muito útil. Existem alguns recursos que permitem fazer recortes da tela do computador de forma rápida (o famoso “print”). Confira logo abaixo."},
+    {"p3": "Ferramenta de captura: pesquise por ela na barra de pesquisa do Windows (canto inferior esquerdo) e fixe ela na barra de tarefas."},
+    {"p4": "Ela é muito fácil de usar, sendo que, para edições mais completas, aperte “Ctrl + E”, e você será redirecionado ao Paint 3D."},
+    {"p3": "Shift + Windows + S: é um atalho que você pode usar para fazer o recorte da tela, dependendo da situação, pode até ser mais fácil usá-lo."},
+    {"p3": "Print Screen: por fim, tem uma tecla (dependendo do teclado, ela pode ser abreviada) chamada “Print Scrn”, em que rapidamente você pode tirar uma captura da tela completa, pronta para ser encaminhada."},
+    {
+      "image": {
+          "source": {
+              "link": "https://www.pexels.com/pt-br/foto/livro-codificacao-computador-mesa-4974914/",
+              "title": "Pexels"
+            },
+          "description": "Homem estudando e lendo em seu computador",
+          "file_name": "homem-lendo-estudando-pc.jpeg"
+      }
+    },
+    {"h3": "Atalhos do Teclado"},
+    {"p2": "Existem determinadas combinações de teclas que facilitam demais o uso do computador, separamos apenas os atalhos que para a maioria do público pode ser bem útil."},
+    {"p3": "Editando Documentos:"},
+    {"p4": "Ctrl + C: copia o item selecionado;"},
+    {"p4": "Ctrl + V: cola o item selecionado;"},
+    {"p4": "Ctrl + X: recorta o item selecionado;"},
+    {"p4": "Ctrl + B: negrita o item selecionado;"},
+    {"p4": "Ctrl + A: seleciona todo o texto;"},
+    {"p4": "Ctrl + S: salva o documento;"},
+    {"p4": "Ctrl + Z: desfaz a última ação;"},
+    {"p4": "Ctrl + Y: refaz a última ação;"},
+    {"p4": "Ctrl + Setas: movem o cursor para o próximo parágrafo ou palavra;"},
+    {"p5": "Se você segurar o “Shift” nessa ação, ele seleciona as palavras."},
+    {"p4": "Windows + . (ponto): abre a barra de emoji e de caracteres especiais."},
+    {"p3": "Atalhos Gerais:"},
+    {"p4": "Alt + Tab: alterna entre as janelas;"},
+    {"p4": "Alt + clicar numa imagem: simplifica a função de “salvar como”;"},
+    {"p4": "Windows + D: alterna para a área de trabalho (pressionar novamente faz você voltar para onde estava);"},
+    {"p4": "Windows + L: bloqueia a tela (você precisará colocar a senha novamente);"},
+    {"p2": "Windows + E: abre o Explorador de Arquivos;"},
+    {"p2": "Ctrl + T: abre uma nova aba;"},
+    {"p2": "Ctrl + W: fecha a aba atual;"},
+    {"p2": "Ctrl + H: abre o histórico;"},
+    {"p2": "Ctrl + F: procura alguma palavra na página;"},
+    {"p2": "Ctrl + D: adiciona a página atual na barra de favoritos;"},
+    {"p2": "Ctrl + E: pesquisa na barra de endereço (para sair, é só apertar 'Esc')."},
+    {"p2": "Ctrl + Shift + T: reabre a última página fechada;"},
+    {"p2": "Ctrl + Shift + N: abre uma nova guia anônima;"},
+    {"p2": "Segurar Shift: permite selecionar várias coisas simultaneamente."},
+    {
+      "image": {
+          "source": {
+              "link": "https://www.pexels.com/pt-br/foto/teclado-para-jogos-com-luz-negra-841228/",
+              "title": "Pexels"
+            },
+          "description": "Teclado de um computador",
+          "file_name": "teclado-dicas-computador.jpeg"
+      }
+    },
+    {"p2": "Bônus: atalhos para o mouse (é preciso que o mouse já venha com os botões a mais)."},
+    {"p3": "Scroll: este é o botão de rolagem, ao clicar nele, você pode encontrar algumas funcionalidades."},
+    {"p4": "Pressionar num link: ele será aberto em uma nova aba;"},
+    {"p4": "Pressionar numa aba: imediatamente ela será fechada;"},
+    {"p4": "Pressionar livremente: aparecerá a função de rolagem automática, basta mover o cursor para cima ou para baixo;"},
+    {"p4": "Ctrl + rolagem: aumenta/diminui o zoom da tela."},
+    {"p3": "Botões adicionais: exclusivos para mouses específicos."},
+    {"p4": "Eles permitem retroceder ou avançar a página atual."},
+    {"h2": "Algo a Mais"},
+    {"p1": "A cada dia que passa, novas funcionalidades são adicionadas no computador. Esteja sempre disposto a aprender, fique testando as ferramentas, tenha curiosidade."},
+    {"p1": "Através deste link, você poderá ver dicas de como escolher o PC que melhor se encaixa às suas preferências, de acordo com preço, localização, componentes e mais."},
+    {"p1": "Existem programas que fazem diversas funções apresentadas, como: atualizar drivers, software, desinstalar programas, proteção contra vírus, otimizar o sistema, desfragmentar os dados..."},
+    {"p2": "No entanto, o Windows já tem todas essas funções, vale a pena aprender como executá-las, visto que você pode acabar se complicando utilizando esses programas. Além disso, nem todos eles são confiáveis, cabe a você decidir se vai instalá-los ou não."},
+    {"p1": "Para finalizar, confira o vídeo abaixo com outras dicas para você aproveitar ainda mais os recursos do seu computador:"},
+    {
+      "video": {
+          "link": "https://www.youtube.com/watch?v=1n-1LppsBrQ"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.stars {
+  display: flex;
+  gap: 0.15rem;
+  .star {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 1rem;
+    }
+  }
+}

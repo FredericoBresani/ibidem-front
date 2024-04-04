@@ -1,0 +1,80 @@
+@import '../../../styles.scss';
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.17rem;
+  h2 {
+    font-family: $raleway;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    width: 90%;
+    margin: 1.2rem 1rem;
+  }
+  .entries {
+    display: flex;
+    flex-direction: column;
+    min-height: 10rem;
+    justify-content: space-around;
+    width: 95%;
+    .entry {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 0 1.5rem 0;
+      input {
+        outline: none;
+        height: 1.5rem;
+        width: 95%;
+        background-color: white;
+        font-size: 13px;
+        font-weight: 400;
+        border: solid 1px;
+        border-color: rgb(214, 214, 214);
+        font-family: $raleway;
+        border-radius: 3px;
+        padding: 0.5rem;
+      }
+      input:focus {
+        border: 2px solid rgba(59, 130, 246, 0.5);
+      }
+      p {
+        font-family: $raleway;
+        font-weight: 500;
+        display: flex;
+        font-size: 13px;
+        align-items: center;
+        width: 95%;
+      }
+    }
+  }
+  .submit {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    div {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      button {
+        outline: none;
+        border: none;
+        background-color: #f2812f;
+        min-height: 2rem;
+        min-width: 5rem;
+        border-radius: 2rem;
+        color: white;
+        font-family: $raleway;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #839E3E;
+      }
+    }
+  }
+}

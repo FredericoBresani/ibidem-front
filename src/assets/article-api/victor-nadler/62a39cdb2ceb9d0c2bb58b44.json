@@ -1,0 +1,51 @@
+{
+  "header": {
+    "title": "Como Ser Criativo?",
+    "subtitle": "foi assim que o Zuckerberg criou o Facebook",
+    "read_time": 4,
+    "image": {
+        "source": {
+            "link": "https://www.pexels.com/photo/mountain-and-sky-3274903/",
+            "title": "Pexels"
+          },
+        "description": "Espaço",
+        "file_name": "creativity-article.jpeg"
+    }
+  },
+  "content": [
+    {"h2": "Um Quadro Geral"},
+    {"p1": "O Fórum Econômico Mundial divulgou a pesquisa Future Of Jobs, que até 2022 a criatividade será uma das 10 habilidades profissionais mais requisitadas por grandes corporações."},
+    {"p1": "Citaremos aqui um compilado de estudos, para te auxiliar a desenvolver a criatividade. Separamos aqueles que são de fato úteis e práticos."},
+    {"h3": "Direto ao Ponto"},
+    {"p2": "Para se tornar mais criativo é necessário programar o cérebro para isso, mas como?"},
+    {"p2": "O cérebro é eficiente naquilo em que é estimulado, então, é preciso diariamente tentar ter ideias. Quanto mais você se propor a pensar em “como posso fazer isso de forma melhor/diferente”, maior se torna a sua capacidade criativa."},
+    {"p2": "Veja que é um processo, Mark Zuckerberg disse que tentou diversos outros projetos até chegar no Facebook. Criatividade vem da tentativa."},
+    {"p2": "Segundo o ebiografia, Thomas Edison inventou a lâmpada elétrica após realizar incríveis 1.200 experiências."},
+    {"p2": "Uma vez que estimulamos o cérebro, ele tende a ter ideias naturalmente, é um PROCESSO, não tem para onde correr."},
+    {"p2": "Não acredite em fórmulas malucas, continue dando seu melhor."},
+    {
+      "video": {
+          "link": "https://www.youtube.com/watch?v=A8mGZNIoUsg"
+      }
+    },
+    {"h3": "Dicas Práticas"},
+    {"p2": "Tenha sempre um bloco de notas perto de você: se não anotar a ideia na hora, vai esquecer. Ao anotar, o cérebro entende que é para continuar tendo ideias."},
+    {"p2": "Procure novas experiências: filmes, músicas, palestras, e até mesmo viagens. Esteja aberto a aprender."},
+    {"p2": "Ler livros ajuda bastante: eles abrem o cérebro a mais diálogos, conceitos, palavras e descrições, aumentando seu repertório."},
+    {"h3": "Algumas anotações"},
+    {"p2": "É muito importante anotar sempre que tiver alguma ideia. Mesmo que a princípio não pareça que está ficando muito bom, continue, que depois você aperfeiçoa o que escreveu."},
+    {"p2": "Para ser criativo, também é preciso saber lidar com os erros. Errar faz parte do processo, quanto mais você erra, sobra menos erros para se cometer. Erre até não ter como errar mais."},
+    {"p2": "Em meio a tantos erros, é natural sentir vontade de reclamar. No entanto, tal atitude é muito nociva (até para a sua saúde). Se a situação não estiver se encaminhando como deveria, pense: “como posso contornar isso”, reclamar não vai te ajudar."},
+    {"p2": "Seja proativo: não espere atitude dos outros, vá você tentar resolver. Também não espere parabéns, faça porque você quer ser um “resolutor de problemas”."},
+    {"h2": "Escola Mata a Criatividade?"},
+    {"p1": "“Na escola aprendemos a resposta para os problemas, mas não a arte de responder problemas.”\n\n- Murilo Gun"},
+    {"p1": "Tem uma palestra muito interessante do Murilo Gun no TED Talks que vale demais ser vista, mas vai aqui um leve resumo."},
+    {"p1": "O mundo evolui constantemente, surgem cada vez mais coisas para se estudar. No entanto, a escola ensina apenas a como resolver problemas já resolvidos, e não a como ser criativo para encontrar novas soluções para novos problemas."},
+    {"p1": "Definitivamente é um vídeo 'mind-blowing', divisor de águas para quem quer ser mais criativo."},
+    {
+      "video": {
+          "link": "https://www.youtube.com/watch?v=WauIURFTpEc"
+      }
+    }
+  ]
+}

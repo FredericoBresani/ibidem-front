@@ -1,0 +1,303 @@
+@import '../../../../styles.scss';
+
+.global {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+  min-height: 10rem;
+  padding: 0 2rem;
+  .button-scroll-right, .button-scroll-left {
+    position: absolute;
+    background-color: black;
+    width: 5rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    img {
+      width: 4rem;
+      margin: 0 0 5rem 0;
+    }
+  }
+  .button-scroll-right-modules, .button-scroll-left-modules {
+    position: absolute;
+    background-color: $main-orange;
+    opacity: 0.7;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 50%;
+    margin: 15% 1rem 0 1rem;
+    img {
+      width: 3rem;
+    }
+  }
+  .button-scroll-right-evaluations, .button-scroll-left-evaluations {
+    position: absolute;
+    background-color: $main-green;
+    opacity: 0.7;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 50%;
+    margin: 2% 1rem 0 1rem;
+    img {
+      width: 2.2rem;
+    }
+  }
+  .button-scroll-right-modules, .button-scroll-right-evaluations {
+    right: 0;
+  }
+  .button-scroll-left-evaluations, .button-scroll-left-modules {
+    left: 0;
+  }
+  .button-scroll-right {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1));
+    right: 0;
+  }
+  .button-scroll-left {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1));
+    left: 0;
+  }
+  .scrollable {
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    overflow: hidden;
+    align-items: flex-start;
+    margin: 0 0 4rem 0;
+    gap: 1;
+    .image-cover {
+      display: flex;
+      flex: 1;
+      color: white;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      line-height: 1rem;
+      min-width: 250px;
+      margin: 1.5rem 1rem;
+      @media (max-width: 350px) {
+          width: 100%;
+      }
+      h3 {
+          font-family: $raleway;
+          font-size: 20px;
+          margin: 0.3rem;
+      }
+      p {
+          font-family: $raleway;
+          font-size: 15px;
+      }
+      button {
+          margin: 1rem;
+      }
+      img {
+          @media (max-width: 350px) {
+              width: 100%;
+          }
+      }
+      a {
+        cursor: pointer;
+        .content-image {
+          border-radius: 1rem;
+          margin: auto auto 1rem auto;
+          max-width: 200px;
+          @media (max-width: 1998px) {
+              width: 420px;
+          }
+          @media (max-width: 1300px) {
+              width: 320px;
+          }
+        }
+      }
+      .content-title {
+        cursor: pointer;
+        text-align: center;
+      }
+      .content-description {
+        cursor: pointer;
+        text-align: center;
+      }
+      .see-more {
+        display: flex;
+        width: 8.5rem;
+        height: 2.7rem;
+        border: none;
+        cursor: pointer;
+        font-weight: bolder;
+        border-radius: 10rem;
+        background: linear-gradient(to right, #839E3E, #9CBD4A);
+        color: white;
+        font-size: 16px;
+        font-weight: bolder;
+        padding: 10px auto;
+        margin: 1rem 0;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.541);
+        @media (max-width: 350px) {
+          width: 100%;
+        }
+        button {
+          cursor: pointer;
+          box-shadow: 0 0 0 0;
+          border: 0 none;
+          outline: 0;
+          background-color: transparent;
+          text-decoration: none;
+          color: white;
+          font-family: $comfortaa;
+        }
+      }
+      .see-more:hover {
+        background: linear-gradient(to right, #231123, #703770 );
+        border: none;
+      }
+    }
+    .module {
+      display: flex;
+      flex: 1;
+      color: black;
+      background-color: rgb(250, 250, 250);
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      line-height: 1rem;
+      min-width: 280px;
+      min-height: 100%;
+      padding: 2.5rem 2rem;
+      margin: 1.5rem 1rem;
+      gap: 1rem;
+      border-radius: 2rem;
+      border: solid 1px rgb(238, 238, 238);
+      @media (max-width: 350px) {
+          width: 100%;
+      }
+      .number {
+        h3 {
+          font-family: $comfortaa;
+          font-size: 20px;
+        }
+      }
+      .name {
+        margin: 0 0 0.7rem 0;
+        h3 {
+          font-family: $comfortaa;
+          font-size: 15px;
+        }
+      }
+      .duration {
+        margin: 0 0 0.5rem 0;
+        p {
+          font-family: $raleway;
+        }
+      }
+      .objective {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p {
+          font-family: $raleway;
+          font-size: 14px;
+          text-align: left;
+        }
+      }
+      .classes {
+        margin: 0 0 2rem 0;
+        ul {
+          list-style: none;
+          li {
+            display: flex;
+            align-items: center;
+            margin: 0 0 0.2rem 0;
+            gap: 0.4rem;
+            img {
+              width: 1rem;
+            }
+            p {
+              font-family: $raleway;
+            }
+          }
+        }
+      }
+    }
+    .evaluation {
+      display: flex;
+      gap: 1rem;
+      background-color: rgb(250, 250, 250);
+      flex: 1;
+      border-radius: 1.2rem;
+      width: 35rem;
+      min-width: 35rem;
+      padding: 2rem 2rem;
+      margin: 0 1rem;
+      border: 1px solid rgb(238, 238, 238);
+      .user-image {
+        display: flex;
+        flex-direction: column;
+        .circle {
+          background-color: rgb(0, 0, 26);
+          color: white;
+          min-width: 2.5rem;
+          min-height: 2.5rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: $raleway;
+          font-size: 20px;
+          font-weight: 600;
+          border-radius: 50%;
+        }
+      }
+      .comment {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        .name {
+          font-family: $comfortaa;
+          font-size: 14px;
+          font-weight: bolder;
+        }
+        .stars-date {
+          display: flex;
+          gap: 0.5rem;
+          .date {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(100, 100, 100);
+            p {
+              font-family: $raleway;
+              font-weight: 500;
+              font-size: 13px;
+            }
+          }
+        }
+        .text {
+          color: $white-light-dark-letters;
+          p {
+            font-family: $raleway;
+            font-size: 13px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+}

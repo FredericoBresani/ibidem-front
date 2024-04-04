@@ -1,0 +1,57 @@
+<div class="hamburguer-background">
+  <div class="hamburguer" (click)="toggleDropdown()">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</div>
+
+<ul class="nav-links" id="nav-links-list" (click)="toggleNavLinks()">
+  <li *ngFor="let option of options">
+    <a
+      class="nav-link"
+      *ngIf="option.type === 'image' && option.key !== 'greeting'"
+      href="{{ option.url }}"
+      target="_blank"
+      >
+        <img src="{{ option.value }}">
+    </a>
+    <a
+      class="nav-link"
+      *ngIf="option.type === 'text' && option.key !== 'greeting'"
+      href="{{ option.url }}"
+      >
+      {{ option.value }}
+    </a>
+    <a
+      class="nav-link"
+      *ngIf="option.key === 'greeting' && user?.name"
+      (mouseover)="activateAccountDropDown($event)"
+      >
+        <img src="{{ option.value }}">
+    </a>
+    <a
+      class="nav-link"
+      *ngIf="option.key === 'greeting' && !user?.name"
+      [routerLink]="['/account/login']"
+      >
+      Login
+    </a>
+  </li>
+</ul>
+
+<div class="account-dropdown-hidden" id="account-dropdown" *ngIf="user?._id">
+  <div class="account-menu">
+    <ul>
+      <li><a [routerLink]="['/account/update/', user?._id]">Editar conta</a></li>
+      <li *ngIf="user?.author === '1'"><a [routerLink]="['/blog/criar-artigo']">Criar Artigo</a></li>
+      <li *ngIf="user?.author === '1'"><a [routerLink]="['/blog/meus-artigos']">Meus Artigos</a></li>
+      <li><a (click)="logout()">Log out</a></li>
+      <li class="account-menu-x" (click)="deactivateAccountDropDown()">
+        <img src="../../../assets/icons/x.svg">
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!--Lembrar de criar a lógica para usuários sem conta, criar conta-->

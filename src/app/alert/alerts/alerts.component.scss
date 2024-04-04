@@ -1,0 +1,29 @@
+@import '../../../styles.scss';
+
+.alert-body {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  display: flex;
+  right: -20rem;
+  top: 0.4rem;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  pointer-events: all;
+  transition: all 1s ease;
+  z-index: 3;
+  .message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: $white-light-dark;
+    font-family: $raleway;
+  }
+}
+
+.alert-body-slide {
+  right: 0.4rem;
+}

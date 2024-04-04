@@ -1,0 +1,79 @@
+{
+    "header": {
+        "title": "A Guerra do Tronos",
+        "subtitle": "Indicação de Livro",
+        "read_time": 6,
+        "image": {
+            "source": {"link": "/", "title": ""},
+            "description": "capa do livro game of thrones",
+            "file_name": "gameOfThrones-article.jpeg"
+        }
+    },
+    "content": [
+        {"h2": "Informações Gerais"},
+        {"p1": "Nome: A Guerra dos Tronos;"},
+        {"p1": "Páginas: 694;"},
+        {"p1": "Autor: George R.R. Martin;"},
+        {"p1": "Personagens Principais: Daenerys Targaryen, Jon Snow, Ned Stark, Arya Stark, Catelyn Stark, Sansa Stark, Bran Stark, Jaime Lannister, Cersei Lannister, Tyrion Lannister;"},
+        {"p1": "Ano: 1996;"},
+        {"p1": "Gênero: Romance, Literatura Fantástica, Alta Fantasia, Ficção Política;"},
+        {"p1": "Título Original: A Game of Thrones."},
+        {"h2": "Introduzindo"},
+        {"p1": "á listamos os benefícios da leitura, e agora, aproveite a nossa indicação de livro, A Guera dos Tronos, que faz parte da saga: As Crônicas de Gelo e Fogo."},
+        {"p1": "Ainda que a adaptação para a série de TV tenha terminado de forma decepcionante para muitos, os livros que compõem a saga são excelentes."},
+        {"p1": "Para quem viu a série, a compreensão do 1° livro é mais fácil, caso contrário, saiba que o livro é complexo, mas vale cada palavra, então é preciso de bastante atenção."},
+        {"p1": "Veja a seguir alguns motivos do porquê você deve ler o livro:"},
+        {
+            "image": {
+                "source": {"link": "https://www.pexels.com", "title": "Pexels"},
+                "description": "Porto Real Game of Thrones",
+                "file_name": "kingsLanding-article.jpeg"
+            }
+        },
+        {"h3": "Riqueza dos Detalhes"},
+        {"p2": "É tão bom apreciar algo tão bem feito, George R. R. Martin se dedicou muito em construir uma obra que conceda os detalhes necessários, ajudando dessa forma o leitor a entender os personagens e o mundo criado."},
+        {"p2": "Até mesmo uma simples palavra como 'talvez', tem uma importância gigante no decorrer da história."},
+        {"h3": "Divisão dos Capítulos"},
+        {"p2": "Cada capítulo é abordado pela perspectiva de determinado personagem. Apesar das 694 páginas, eles são relati vamente curtos, mas são muitos (quase 80 no primeiro livro)."},
+        {"h3": "Narrativa"},
+        {"p2": "Naturalmente, para adaptar na série, houve mudanças na história. Nos livros chega a ser impressionante como tudo se conecta."},
+        {"p2": "Os diálogos foram tão bem construídos que mesmo que você já tenha visto a série, nã o perde emoção alguma durante a leitura. Considerando que você acompanha os pensamentos dos personagens, muitas vezes chega a ser mais impactante o desfecho."},
+        {
+            "image": {
+                "source": {"link": "https://pixabay.com", "title": "Pixabay"},
+                "description": "Floresta Game of Thrones",
+                "file_name": "caminhoKingsLanding-article.jpeg"
+            }
+        },
+        {"h3": "Tyrion Lannister"},
+        {"p2": "Definitivamente um dos melhores desenvolvimentos de personagem já visto, a comunidade o têm como favorito (até o próprio George acha isso), e claro, não tira o brilho dos outros personagens."},
+        {"p2": "Detalhe, a série cortou um personagem fundamental no ar co dele, influenciando completamente o final dela..."},
+        {"h3": "Algo a Mais"},
+        {"p2": "Para quem não conhece, o 'Hodor Cavalo' é um podcast que faz comentários sobr e cada capítulo do livro, pode ser uma boa maneira de se aprofundar na história e entender mais os acontecimentos, recomendamos."},
+        {"p2": "Por ser um livro grande, recomendamos que você utilize o Kindle (veja nosso p ost sobre ele)."},
+        {"p2": "Ao invés de usar um celular numa sala de espera, fila, ou até mesmo no banheiro, leia o livro, é um passatempo ideal."},
+        {"h2": "Finalizando"},
+        {"p1": "É uma experiência incrível ler o último capítulo do 1º livro (Daenerys), ter a sens ação de ter acabado é impagável, vai por mim."},
+        {"p1": "Se você for uma pessoa bem sensível, pode ser que o livro seja brutal até demais. Então é preciso coragem, mas calma que a vingança quando chega é m uito reconfortante."},
+        {"p1": "Assista abaixo um trecho da série 'Game of Thrones' em que o personagem Tyrion Lannister explica o porquê é preciso ler:"},
+        {
+            "video": {
+                "link": "https://www.youtube.com/watch?v=aVGTtBDFk88"
+            }
+        },
+        {"h3": "Mais da Saga"},
+        {"p2": "Veja em ordem os livros que compõem 'As Crônicas de Gelo e Fogo', a seguir:"},
+        {"p3": "1°) A Guerra dos Tronos;"},
+        {"p3": "2°) A Fúria dos Reis;"},
+        {"p3": "°) A Torme nta de Espadas;"},
+        {"p3": "4°) O Festim dos Corvos;"},
+        {"p3": "5°) A Dança dos Dragões."},
+        {"p2": "O autor ainda prometeu mais dois livros para completar a história, são eles:"},
+        {"p3": "6°) Os Ventos de Inverno;"},
+        {"p3": "7°) Um Sonho de Primavera."},
+        {"h2": "Relacionados"},
+        {"p1": "https://learn.ibidemholding.com/content/harrypotter."},
+        {"p1": "https://learn.ibidemholding.com/content/os-segredos-da-mente-milionaria."},
+        {"p1": "https://learn.ibidemholding.com/content/sherlock-holmes."}
+    ]
+}

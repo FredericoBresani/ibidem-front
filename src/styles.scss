@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+
+
+// Orange
+$main-orange: #f2812f;
+$orange-hover: #dc6a19;
+
+// White
+$white: rgb(255, 255, 255);
+$white-hover: rgb(227, 227, 227);
+$white-light-dark: rgb(240, 240, 240);
+
+//black
+$black: rgb(0, 0, 0);
+$light-black-background: rgb(232, 232, 232);
+$light-black: rgb(40, 40, 40);
+$black-transparent: rgba(0, 0, 0, .5);
+
+// Green
+$main-green: #839e3e;
+$dark-green: #474b24;
+
+
+// Purple
+$main-purple: #231123;
+
+// Letters
+$dark-letters: rgba(0, 0, 0, 0.897);
+$white-dark-letters: rgb(30, 30, 30);
+$white-light-dark-letters: rgb(60, 60, 60);
+$grey-light: rgb(200, 200, 200);
+$comfortaa: 'Comfortaa', sans-serif;
+$raleway: 'Raleway', sans-serif;
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("/assets/images/library-background.jpeg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  @media (max-width: 540px) {
+      background-repeat: repeat-y;
+      background-attachment: fixed;
+  }
+}
+

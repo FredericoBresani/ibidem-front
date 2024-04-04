@@ -1,0 +1,29 @@
+<form [formGroup]="loginForm" class="form" (ngSubmit)="onSubmit()">
+  <h1>Login</h1>
+  <div class="emailUserSenha">
+    <div class="entrada">
+      <p>Usuário:</p>
+      <input type="text" name="name" formControlName="username" autocomplete="off">
+    </div>
+
+    <div class="entrada">
+      <p>Senha:</p>
+      <input type="password" name="senha" class="pass" formControlName="password">
+      <div class="mostrarSenha">
+        <input type="checkbox" class="passwordVisible" (click)="togglePassword($event)">
+        <p class="checkboxText">Mostrar senha.</p>
+      </div>
+    </div>
+  </div>
+  <div class="submit">
+    <div>
+      <button type="submit" [disabled]="!loginForm.valid">Login</button>
+    </div>
+  </div>
+  <div class="semConta">
+    <div class="account-support">
+      <a href="/account/register">Sem conta?</a>
+      <a [routerLink]="['/account/lost-account']">Esqueceu a senha?</a>
+    </div>
+  </div>
+</form>

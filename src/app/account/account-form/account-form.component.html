@@ -1,0 +1,103 @@
+<div class="delete-account-popup" *ngIf="showPopup" (click)="togglePopup()">
+  <div class="body">
+    <h3>Apagar conta</h3>
+    <p>Deseja confirmar? seus dados serão perdidos permanentemente!</p>
+    <div class="buttons">
+      <button class="cancel">Cancelar</button>
+      <button class="confirm" (click)="deleteAccount(user?._id)">Confirmar</button>
+    </div>
+  </div>
+</div>
+
+<form class="form" [formGroup]="accountForm" (ngSubmit)="onSubmit()">
+  <h1>{{ user?._id ? ('Seus Dados') : ('Cadastre-se')}}</h1>
+  <div class="emailUserSenha">
+    <div class="entrada">
+      <p>Email:</p>
+      <input type="text" name="email" formControlName="temp_email">
+    </div>
+    <div class="entrada">
+      <p>Nome de usuário:</p>
+      <input type="text" name="username" formControlName="temp_username">
+    </div>
+    <div class="entrada">
+      <p>Senha:
+        <span class="password-alert">
+          <app-safe-password class="safe-password-comp" *ngIf="showPassAlert"></app-safe-password>
+          <img src="/assets/icons/alert-circle.svg" class="strong-password" (click)="togglePasswordAlert()">
+        </span>
+      </p>
+      <input type="password" name="senha" class="pass" formControlName="password">
+      <div class="mostrarSenha">
+        <input type="checkbox" class="passwordVisible" (click)="togglePassword($event)">
+        <p class="checkboxText">Mostrar senha.</p>
+      </div>
+    </div>
+    <div class="entrada" *ngIf="user?._id">
+      <p>Nova Senha:</p>
+      <input type="password" name="senha" class="pass" formControlName="temp_password">
+      <div class="mostrarSenha">
+        <input type="checkbox" class="passwordVisible" (click)="togglePassword($event)">
+        <p class="checkboxText">Mostrar senha.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="date">
+    <div class="birthDate">
+      <p>Data de nascimento (Opcional): </p>
+      <input type="date" formControlName="temp_birth_date">
+    </div>
+    <div class="termosDeAcordo">
+      <div>
+        <input type="checkbox" class="agreement" (click)="confirmAgreement()">
+        <a class="checkboxText" [routerLink]="['/agreement-terms']" style="color: #f2812f">
+          Li e concordo com os Termos de Acordo.
+        </a>
+      </div>
+    </div>
+    <div class="receive-emails">
+      <div>
+        <input type="checkbox" formControlName="temp_receive_emails">
+        <p class="chekboxText">Quero receber emails.</p>
+      </div>
+    </div>
+  </div>
+  <div class="submit">
+    <div *ngIf="!accountForm.valid || !agreement">
+      <app-form-errors [formErrors]="formErrors" *ngIf="showFormErrors"></app-form-errors>
+      <img
+      src="/assets/icons/alert-triangle.svg"
+      title="Formulário incompleto!"
+      (click)="showFormError()"
+      >
+    </div>
+    <div *ngIf="accountForm.valid && agreement">
+      <img src="/assets/icons/check-circle.svg" title="Formulário completo!">
+    </div>
+
+
+    <button
+    class="deleteButton"
+    *ngIf="user?._id"
+    type="button"
+    (click)="togglePopup()"
+    >apagar conta</button>
+    <button
+      class="submitButton"
+      type="submit"
+      *ngIf="user?._id"
+      [disabled]="!accountForm.valid || !agreement"
+    >
+      Atualizar
+    </button>
+    <button
+      class="submitButton"
+      type="submit"
+      *ngIf="!user?._id"
+      [disabled]="!accountForm.valid || !agreement"
+    >
+      Cadastrar
+    </button>
+  </div>
+</form>

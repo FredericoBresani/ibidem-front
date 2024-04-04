@@ -1,0 +1,22 @@
+<router-outlet>
+</router-outlet>
+
+<section class="home-page">
+  <div class="title">
+    <h2>Entenda mais sobre nossa proposta</h2>
+    <span class="underline"></span>
+  </div>
+
+  <div class="comments">
+    <div class="comment" *ngFor="let comment of comments">
+      <div class="text">
+        <p>"{{ comment.comment }}"</p>
+      </div>
+      <div class="name">
+        <p>{{ comment.name }}</p>
+        <div class="owner-image" style="background-image: url({{comment.image}});">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

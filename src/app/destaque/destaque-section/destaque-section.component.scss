@@ -1,0 +1,293 @@
+@import '../../../styles.scss';
+
+.destaque {
+  display: flex;
+  background-color: $black;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 0 0;
+  .banner {
+    border: 1px solid $main-green;
+    padding: 0.7rem 2.5rem;
+    width: 90%;
+    background: linear-gradient(to right, $main-purple, $main-green);
+    @media (max-width: 580px){
+      padding: 0.5rem 2rem;
+    }
+    .banner-text {
+      font-family: $comfortaa;
+      color: white;
+      font-size: 40px;
+      text-align: center;
+      @media (max-width: 1200px){
+        font-size: 35px;
+      }
+      @media (max-width: 1130px){
+        font-size: 30px;
+      }
+      @media (max-width: 980px){
+        font-size: 25px;
+      }
+      @media (max-width: 790px){
+        font-size: 18px;
+      }
+    }
+  }
+  .highlights {
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    @media (max-width: 1110px) {
+      flex-direction: column;
+    }
+    .our-courses {
+      display: flex;
+      flex-direction: column;
+      width: 54%;
+      justify-content: center;
+      align-items: center;
+      @media (max-width: 1110px) {
+        width: 100%;
+      }
+      .courses-banner {
+        font-size: 18px;
+        padding: 0.5rem 2rem;
+        border: solid 1px $main-green;
+        background: linear-gradient(to right, $main-purple, $main-green);
+        width: 100%;
+        margin: 0 0 1rem 0;
+        @media (max-width: 790px){
+          font-size: 12px;
+        }
+        .courses-title {
+          color: white;
+          font-family: $raleway;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+      .courses {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 0 2rem 0;
+        @media (max-width: 480px){
+          flex-direction: column;
+          align-items: center;
+        }
+        .course {
+          display: flex;
+          position: relative;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          max-width: 10.5rem;
+          width: 10.5rem;
+          background-color: transparent;
+          @media (max-width: 580px){
+            width: 8.5rem;
+          }
+          @media (max-width: 480px){
+            width: 10.5rem;
+          }
+          .long-description {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background-color: $white-light-dark;
+            padding: 0.8rem 0.5rem;
+            height: 0%;
+            opacity: 0;
+            pointer-events: none;
+            transition: all .3s ease-out;
+            h3 {
+              font-family: $comfortaa;
+              font-size: 15px;
+            }
+            p {
+              font-family: $raleway;
+              font-size: 13px;
+            }
+          }
+          .long-description-activated {
+            opacity: 1;
+            height: 60%;
+          }
+          .course-image {
+            height: 10rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            width: 100%;
+            .play {
+              justify-content: center;
+              align-items: center;
+              height: 100%;
+              img {
+                width: 3.5rem;
+              }
+            }
+            .see-more {
+              display: none;
+              height: 100%;
+              justify-content: center;
+              align-items: center;
+              background-color: rgba($color: #000000, $alpha: 0.3);
+              button {
+                outline: 0 0;
+                border: none;
+                cursor: pointer;
+                border-radius: 0.5rem;
+                padding: 0.2rem 0.5rem;
+              }
+            }
+          }
+          .course-title {
+            color: white;
+            font-family: $comfortaa;
+            font-size: 14px;
+            margin: 0.5rem 0 0 0;
+            flex: 0;
+            cursor: pointer;
+          }
+          .course-title:hover {
+            color: $main-green;
+          }
+          .details {
+            width: 100%;
+            .short-description {
+              p {
+                color: $grey-light;
+                font-family: $raleway;
+                font-size: 13px;
+                text-align: left;
+              }
+            }
+            .price {
+              display: flex;
+              justify-content: space-between;
+              margin: 0.5rem 0;
+              .value {
+                display: flex;
+                align-items: center;
+                p {
+                  padding: auto 0;
+                  color: white;
+                  font-family: $raleway;
+                  font-size: 14px;
+                }
+              }
+              .share-buttons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 0.3rem;
+                .fa.fa-whatsapp {
+                  color: white;
+                }
+                .fa.fa-whatsapp:hover {
+                  color: $main-green;
+                }
+                a {
+                  cursor: pointer;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  text-decoration: none;
+                  svg {
+                    width: 18px;
+                  }
+                  svg:hover {
+                    stroke: $main-green;
+                  }
+                }
+              }
+            }
+          }
+          .more-details {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            width: 1.8rem;
+            height: 1.8rem;
+            top: 51%;
+            right: -0.5rem;
+            border-radius: 50%;
+            cursor: pointer;
+            background: linear-gradient(to right, $dark-green, $main-green);
+            img {
+              width: 1.3rem;
+            }
+          }
+        }
+      }
+    }
+    .content-highlights {
+      .content-banner {
+        font-size: 18px;
+        padding: 0.5rem 2rem;
+        border: solid 1px $main-green;
+        background: linear-gradient(to right, $main-purple, $main-green);
+        width: 100%;
+        margin: 0 0 1rem 0;
+        @media (max-width: 790px){
+          font-size: 12px;
+        }
+        .highlights-title {
+          color: white;
+          font-family: $raleway;
+          font-weight: 400;
+          text-align: center;
+        }
+      }
+      .articles {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        @media (max-width: 1110px){
+          flex-direction: row;
+        }
+        @media (max-width: 630px) {
+          flex-direction: column;
+        }
+        .article {
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+          height: 7rem;
+          .article-image {
+            min-width: 8rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            background-position: 50% 50%;
+          }
+          .article-details {
+            margin: 0 0 0 0.5rem;
+            .name {
+              h3 {
+                color: white;
+                font-family: $comfortaa;
+                font-size: 16px;
+                cursor: pointer;
+              }
+              h3:hover {
+                color: $main-green;
+              }
+            }
+            .description {
+              p {
+                color: $grey-light;
+                font-family: $raleway;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

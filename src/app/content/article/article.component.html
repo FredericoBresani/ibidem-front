@@ -1,0 +1,87 @@
+<app-back-to-top></app-back-to-top>
+<main class="conteudo-principal">
+    <app-article-editor style="flex: 1;"></app-article-editor>
+    <article class="artigo" id="artigo">
+        <div class="article-header">
+            <div class="title">
+                <h1 class="article-title">{{ article?.header?.title }}</h1>
+                <h2 class="subtitle">({{ article?.header?.subtitle }})</h2>
+                <div class="tempoLeitura">
+                    <img src="/assets/icons/clock.svg">
+                    <h3 class="tempo-leitura">Tempo de leitura: {{ article?.header?.read_time }} minutos</h3>
+                </div>
+            </div>
+            <div class="imagens-do-article">
+                <img src="/assets/images/{{ article?.header?.image?.file_name }}" alt="{{ article?.header?.image?.description}}">
+                <p *ngIf="article?.header?.image?.source?.link === '/'" class="fonte">
+                    Foto: <a target="_blank">Reprodução/Internet</a>
+                </p>
+                <p *ngIf="article?.header?.image?.source?.link !== '/'" class="fonte">
+                    Foto: <a target="_blank" href="{{article?.header?.image?.source?.link}}">
+                        {{ article?.header?.image?.source?.title}}
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div *ngFor="let content of article?.content" class="content">
+            <h2 *ngIf="content.h2" class="topic-title">{{ content.h2 }}</h2>
+            <h3 *ngIf="content.h3" class="subtopic-title">{{ content.h3 }}</h3>
+            <div *ngIf="content.image" class="imagens-do-article">
+              <img
+                src="/assets/images/{{ content?.image?.file_name }}"
+                alt="{{ content?.image?.description}}"
+              >
+              <p *ngIf="article?.header?.image?.source?.link === '/'" class="fonte">
+                  Foto: <a target="_blank">Reprodução/Internet</a>
+              </p>
+              <p *ngIf="article?.header?.image?.source?.link !== '/'" class="fonte">
+                  Foto: <a target="_blank" href="{{article?.header?.image?.source?.link}}">
+                      {{ article?.header?.image?.source?.title}}
+                  </a>
+              </p>
+            </div>
+            <div
+              *ngIf="content.video" class="iframe"
+              [innerHTML]="content.video.link | iframeToHtml"
+            >
+            </div>
+            <div *ngIf="content.p1" class="p1">
+              <div>
+                <img src="/assets/icons/minus.svg">
+              </div>
+              <p>{{ content.p1 }}</p>
+            </div>
+            <div *ngIf="content.p2" class="p2">
+              <div>
+                <img src="/assets/icons/circle.svg">
+              </div>
+                <p>{{ content.p2 }}</p>
+            </div>
+            <div *ngIf="content.p3" class="p3">
+              <div>
+                <img src="/assets/icons/square.svg">
+              </div>
+                <p>{{ content.p3 }}</p>
+            </div>
+            <div *ngIf="content.p4" class="p4">
+              <div>
+                <img src="/assets/icons/corner-down-right.svg">
+              </div>
+                <p>{{ content.p4 }}</p>
+            </div>
+            <div *ngIf="content.p5" class="p5">
+              <div>
+                <img src="/assets/icons/hexagon.svg">
+              </div>
+                <p>{{ content.p5 }}</p>
+            </div>
+            <div *ngIf="content.p6" class="p6">
+              <div>
+                <img src="/assets/icons/octagon.svg">
+              </div>
+                <p>{{ content.p6 }}</p>
+            </div>
+        </div>
+    </article>
+    <app-article-form [articleInfos]="articleInfos" style="flex: 1;"></app-article-form>
+</main>

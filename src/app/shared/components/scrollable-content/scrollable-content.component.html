@@ -1,0 +1,108 @@
+<div class="global">
+  <div *ngIf="type === 'article'" class="scrollable" #scrollable>
+    <div class="image-cover" *ngFor="let article of articles">
+      <a (click)="navigateTo(article.author, article._id!)">
+          <img class="content-image" src="/assets/images/{{ article.image }}" alt="{{ article.image_description }}">
+      </a>
+      <div class="content-title">
+          <h3>{{ article.title }}</h3>
+      </div>
+      <div class="content-description">
+          <p>{{ article.subtitle | CharacterLimiter:30 }}</p>
+      </div>
+      <div class="see-more">
+          <button (click)="navigateTo(article.author, article._id!)">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="type === 'course_cape'" class="scrollable" #scrollable>
+    <div class="image-cover" *ngFor="let course of courses">
+      <a (click)="navigateTo(course.title, course._id!)">
+          <img class="content-image" src="/assets/images/{{course.image}}.jpeg" alt="{{ course.image_description }}">
+      </a>
+      <div class="content-title">
+          <h3>{{ course.title }}</h3>
+      </div>
+      <div class="content-description">
+          <p>{{ course.subtitle | CharacterLimiter:30 }}</p>
+      </div>
+      <div class="see-more">
+          <button (click)="navigateTo(course.title, course._id!)">Saiba mais</button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="type === 'course_module'" class="scrollable" #scrollable>
+    <div class="module" *ngFor="let module of modules">
+      <div class="number">
+        <h3>Módulo {{ module.number === -1 ? 'extra' : module.number === -2 ? 'bônus' : module.number }}</h3>
+      </div>
+      <div class="name">
+        <h3>({{ module.name }})</h3>
+      </div>
+      <div class="duration">
+        <p>{{ module.duration }} min</p>
+      </div>
+      <div class="objective">
+        <p>Objetivo: {{ module.objective }}</p>
+      </div>
+      <div style="display: none;" class="classes">
+        <ul>
+          <li *ngFor="let class of module?.classes">
+            <img src="../../../assets/icons/check-circle.svg">
+            <p>{{ class }}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="type === 'course_evaluation'" class="scrollable" #scrollable>
+    <div class="evaluation" *ngFor="let evaluation of evaluations">
+      <div class="user-image" *ngIf="evaluation.user_image === 'none'">
+        <div class="circle">
+          {{ evaluation.username | initials }}
+        </div>
+      </div>
+      <div class="comment">
+        <div class="name">{{ evaluation.username }}</div>
+        <div class="stars-date">
+          <div class="stars">
+            <app-rating-stars [stars]="evaluation.stars"></app-rating-stars>
+          </div>
+          <div class="date" style="display: none;">
+            <p>há {{ evaluation.created_at! | week_age }} semanas</p>
+          </div>
+        </div>
+        <div class="text">
+          <p>
+            {{ evaluation.comment }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="type === 'course_module'" class="button-scroll-right-modules" (click)="scrollDiv($event, 'right')">
+    <img src="../../../assets/icons/arrow-right.svg">
+  </div>
+  <div *ngIf="type === 'course_module'" class="button-scroll-left-modules" (click)="scrollDiv($event, 'left')">
+    <img src="../../../assets/icons/arrow-left.svg">
+  </div>
+
+  <div *ngIf="type === 'course_evaluation'" class="button-scroll-right-evaluations" (click)="scrollDiv($event, 'right')">
+    <img src="../../../assets/icons/arrow-right.svg">
+  </div>
+  <div *ngIf="type === 'course_evaluation'" class="button-scroll-left-evaluations" (click)="scrollDiv($event, 'left')">
+    <img src="../../../assets/icons/arrow-left.svg">
+  </div>
+
+
+  <div *ngIf="type !== 'course_evaluation' && type !== 'course_module'" class="button-scroll-right" (click)="scrollDiv($event, 'right')">
+    <img src="../../../assets/icons/arrow-right.svg">
+  </div>
+  <div *ngIf="type !== 'course_evaluation' && type !== 'course_module'" class="button-scroll-left" (click)="scrollDiv($event, 'left')">
+    <img src="../../../assets/icons/arrow-left.svg">
+  </div>
+</div>

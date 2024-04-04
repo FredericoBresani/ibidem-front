@@ -1,0 +1,38 @@
+<form
+  [formGroup]="articleForm"
+  class="form"
+  [style.display]="!author ? 'none' : author === '0' ? 'none' : ''"
+>
+  <h2>Informações do Artigo</h2>
+  <div class="entries">
+    <div class="entry">
+      <p>Imagem da Capa:</p>
+      <input type="image" formControlName="image">
+    </div>
+
+    <div class="entry">
+      <p>Título:</p>
+      <input type="text" formControlName="title">
+    </div>
+
+    <div class="entry">
+      <p>Subtítulo:</p>
+      <input type="text" formControlName="subtitle">
+    </div>
+
+    <div class="entry">
+      <p>Categoria:</p>
+      <input type="text" formControlName="category">
+    </div>
+
+    <div class="entry">
+      <p>Descrição da Capa:</p>
+      <input type="text" formControlName="image_description">
+    </div>
+  </div>
+  <div class="submit">
+    <div>
+      <button type="submit" [disabled]="!articleForm.valid">Atualizar</button>
+    </div>
+  </div>
+</form>

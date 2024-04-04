@@ -1,0 +1,18 @@
+<header>
+  <div class="site-name">
+    <h1 class="name" id="name"><img [routerLink]="['/home']" src="../../../assets/logos/logo-copia-menor-sem-sombra.jpeg"><a [routerLink]="['/home']"> Ibidem </a></h1>
+  </div>
+  <div class="search">
+    <input class="search-button" placeholder="O que quer aprender hoje?" (keyup)="updateSearch($event)" (focus)="updateSearch($event)">
+    <div class="magnifying-glass">
+      <img class="glass" src="../../../assets/icons/search.svg">
+    </div>
+    <ul class="search-results">
+      <li class="search-result" *ngFor="let result of searchResults"
+      (click)="[navigateTo(result.author, result._id), hideResults()]"><p>{{ result.title }}</p></li>
+    </ul>
+  </div>
+  <nav>
+    <app-navigation-dropdown></app-navigation-dropdown>
+  </nav>
+</header>

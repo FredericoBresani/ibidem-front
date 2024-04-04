@@ -1,0 +1,25 @@
+<div class="fix-flex-display"></div><!--Fixing space between-->
+<div class="fixed-options" [style.display]="!author ? 'none' : author === '0' ? 'none' : 'flex'">
+  <div class="article-edit">
+    <div class="edit-button-body">
+      <img src="/assets/icons/sliders.svg" class="edit-button" (click)="toggleEditionElements()">
+    </div>
+    <div class="article-elements">
+      <ul>
+        <li onclick="addElement(this);" class="title">Título</li>
+        <li onclick="addElement(this);" class="image">Imagem</li>
+        <li onclick="addElement(this);" class="topic">Introdução</li>
+        <li onclick="addElement(this);" class="subTopic">Tópico</li>
+        <li onclick="addElement(this);" class="subSubTopic">Sub-Tópico</li>
+        <li onclick="addElement(this);" class="paragraph">Parágrafo</li>
+        <li onclick="addElement(this);" class="sub-paragraph">Sub-Parágrafo</li>
+        <li onclick="addElement(this);" class="link">Link</li>
+        <li onclick="addElement(this);" class="bold">Negrito</li>
+        <li onclick="addElement(this);" class="meaning-selection">Significado</li>
+        <li onclick="addElement(this);" class="video">Vídeo</li>
+        <li onclick="addElement(this);" class="topic">Conclusão</li>
+      </ul>
+    </div>
+  </div>
+</div>
+

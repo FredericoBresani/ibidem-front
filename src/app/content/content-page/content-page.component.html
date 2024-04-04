@@ -1,0 +1,32 @@
+<main class="content-body">
+    <div class="contents-banner">
+      <h2 class="banner-title">Conteúdos do Ibidem</h2>
+      <div class="banner-subtitle">Para quem acha difícil estudar, mas ama aprender</div>
+    </div>
+    <div class="content-ranks">
+      <div *ngFor="let rank of articleRanks">
+        <div
+          *ngIf="(rank.rank_category === 'new' && articlesFilter.new) || (rank.rank_category === 'most_viewed' && articlesFilter.most_viewed) || (rank.rank_category === 'best_rating' && articlesFilter.best_rating); else elseBlock"
+          class="card"
+          (click)="updateFilter(rank.rank_category)"
+          style="background: #231123;">
+          <p>{{ rank.text }}</p>
+        </div>
+        <ng-template #elseBlock>
+          <div class="card" (click)="updateFilter(rank.rank_category)">
+            <p>{{ rank.text }}</p>
+          </div>
+        </ng-template>
+      </div>
+    </div>
+    <app-scrollable-content [articles]="articles" [type]="'article'" [element_width]="280"></app-scrollable-content>
+</main>
+<div class="categories-banner">
+  <h2 class="banner-title">Categorias Populares</h2>
+  <span class="underline"></span>
+</div>
+<div class="categories">
+<div class="card" *ngFor="let category of articleCategories" (click)="goToSingleCategory(category)">
+  <p>{{ category }}</p>
+</div>
+</div>

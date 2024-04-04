@@ -1,0 +1,94 @@
+@import '../../../styles.scss';
+
+.popup {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: $black-transparent;
+  height: 100%;
+  z-index: 999 !important;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  .body {
+    background-color: $white;
+    padding: 1rem 1.5rem;
+    width: 40%;
+    border-radius: 0.2rem;
+    @media (max-width: 725px){
+      width: 60%;
+    }
+    @media (max-width: 480px){
+      width: 80%;
+    }
+    .title {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 0.5rem;
+      margin: 1rem 0;
+      img {
+        width: 2rem;
+      }
+      h3 {
+        font-family: $comfortaa;
+        font-size: 30px;
+        color: $light-black;
+        margin: 0 0 0.2rem 0;
+        @media (max-width: 360px) {
+          font-size: 25px;
+        }
+      }
+    }
+    .text {
+      font-family: $raleway;
+    }
+    .form {
+      .entry {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        margin: 1rem 0;
+        p {
+          font-family: $raleway;
+        }
+        .input {
+          display: flex;
+          gap: 2rem;
+          input {
+            flex: 1;
+            padding: 0.2rem 0.2rem;
+          }
+          img {
+            flex: 0;
+            width: 1.5rem;
+          }
+        }
+      }
+      button {
+        flex: 0;
+        outline: none;
+        border: none;
+        background-color: #f2812f;
+        min-height: 2rem;
+        min-width: 4rem;
+        border-radius: 2rem;
+        color: white;
+        font-family: $raleway;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+      }
+      .reponse {
+        p {
+          font-family: $raleway;
+          font-weight: 300;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+.popup-hidden {
+  display: none;
+}

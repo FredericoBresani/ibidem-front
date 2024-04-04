@@ -1,0 +1,55 @@
+{
+  "header": {
+    "title": "Dicas de Leitura",
+    "subtitle": "saiba como ler mais",
+    "read_time": 3,
+    "image": {
+        "source": {
+          "link": "https://www.pexels.com/pt-br/foto/homem-com-camiseta-branca-com-gola-redonda-sentado-ao-lado-da-mulher-com-jaqueta-jeans-azul-5530626/", "title": "Pexels"
+        },
+        "description": "Duas pessoas lendo um livro",
+        "file_name": "dicasLeitura-article.jpeg"
+    }
+  },
+  "content": [
+    {"h2": "Introduzindo"},
+    {"p1": "A prática da leitura tem diversos benefícios, isso é fato. Mas como manter a frequência até mesmo quando você só está com preguiça ou falta de tempo?"},
+    {"p1": "Confira a seguir algumas dicas para sair da inércia, as quais o tornarão um ávido leitor."},
+    {"h3": "Interesse"},
+    {"p2": "Se você não tiver o interesse genuíno de ler, a leitura será forçada e nada prazerosa. É importante deixar claro o porquê de ler algum livro, visto que, talvez não faça muito sentido a leitura se ela for algo forçado."},
+    {"h3": "Metas Simples"},
+    {"p2": "Comece dizendo para si mesmo que vai ler o mínimo possível, e assim que você não tiver mais vontade, pare."},
+    {"p2": "Você pode estabelecer algum tempo ou limite também, por exemplo:"},
+    {"p3": "Ler por apenas 15 minutos;"},
+    {"p3": "Ler apenas 1 capítulo."},
+    {
+      "image": {
+        "source": {
+          "link": "https://www.pexels.com/pt-br/foto/pessoa-segurando-um-livro-aberto-na-mesa-dentro-da-sala-1181595/",
+          "title": "Pexels"
+        },
+        "description": "Livros em cima de uma mesa",
+        "file_name": "livros-dicas-leitura.jpeg"
+      }
+    },
+    {"h3": "Conforto"},
+    {"p2": "Encontre aquele lugar confortável, que te ajude a relaxar enquanto lê. Uma postura desconfortável tira toda a concentração, visto que, ao estar incomodado, você vai ficar mudando o tempo todo de posição."},
+    {"p2": "Também é bom acompanhar a leitura com um cafezinho, uma fruta, ou qualquer comida que te auxilie a se manter tranquilo."},
+    {"h3": "Diversidade"},
+    {"p2": "Tente ler mais de uma obra simultaneamente, às vezes você está simplesmente saturado de um livro. O ideal é que eles sejam de categorias diferentes, para não confundir a leitura."},
+    {"p2": "No entanto, limite-se ao máximo de 3 livros nesse período, pois pode acabar gerando um efeito contrário do que o proposto, considerando que as leituras vão demorar muito, algo que vai te cansar bastante."},
+    {"h2": "Algo Mais"},
+    {"p1": "Principalmente se você estiver tentando obter o hábito da leitura, evite começar lendo livros muito grandes ou complexos. Pode ser muito frustrante e traumatizante não conseguir terminar o livro, portanto, leia aos poucos."},
+    {"p1": "Utilize o Kindle, este dispositivo criado pela Amazon foi feito para os leitores, suas diversas funcionalidades facilitam demais a leitura."},
+    {"p1": "Veja algumas das nossas indicações de livros"},
+    {"p2": "A Guerra dos Tronos;"},
+    {"p2": "Os Segredos da Mente Milionária;"},
+    {"p2": "Sherlock Holmes."},
+    {"p1": "E para finalizar, assista o vídeo abaixo para entender o porquê e como tornar a leitura um hábito diário"},
+    {
+      "video": {
+          "link": "https://www.youtube.com/watch?v=qystOOwpCBE"
+      }
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+@import '../../../styles.scss';
+
+.delete-account-popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  .body {
+    background-color: white;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    h3 {
+      font-family: $comfortaa;
+      margin: 1rem 0 1rem 0;
+    }
+    p {
+      font-family: $raleway;
+    }
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin: 2rem 0 0 0;
+      button {
+        outline: none;
+        border: none;
+        background-color: #f2812f;
+        min-height: 2rem;
+        min-width: 6rem;
+        border-radius: 2rem;
+        color: white;
+        font-family: $raleway;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        cursor: pointer;
+      }
+      .cancel {
+        background-color: $white-light-dark;
+        color: black;
+      }
+    }
+  }
+}
+
+.form {
+  background-color: white;
+  border-radius: 5px;
+  margin: 3rem 0 3rem 0;
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-align: center;
+    font-family: $comfortaa;
+    margin: 1rem 0 0 0;
+  }
+  .emailUserSenha {
+    display: flex;
+    flex-direction: column;
+    min-height: 16rem;
+    justify-content: space-around;
+    width: 80%;
+    .entrada {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 0 0.8rem 0;
+      input {
+        outline: none;
+        height: 1.8rem;
+        width: 90%;
+        background-color: white;
+        font-size: 14px;
+        border: solid 1px;
+        border-color: rgb(214, 214, 214);
+        font-family: $comfortaa;
+        border-radius: 3px;
+        padding: 0.5rem;
+      }
+      input:focus {
+        border: 2px solid rgba(59, 130, 246, 0.5);
+      }
+      p {
+        font-family: $raleway;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        width: 90%;
+        .password-alert {
+          display: flex;
+          position: relative;
+          .safe-password-comp {
+            display: flex;
+            position: absolute;
+            left: 0rem;
+            bottom: 1.6rem;
+          }
+          .safe-password-comp-hidden {
+            display: none;
+          }
+          .strong-password {
+            width: 1rem;
+            margin: 0  0 0 0.3rem;
+            cursor: pointer;
+          }
+        }
+      }
+      .mostrarSenha {
+        width: 90%;
+        display: flex;
+        p {
+          font-family: $raleway;
+          font-weight: 400;
+          font-size: 12px;
+          margin: 0 0 0 0.5rem;
+        }
+        .passwordVisible {
+          flex: 0;
+          min-width: 13px;
+          min-height: 13px;
+        }
+      }
+    }
+  }
+  .date {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    .birthDate {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      p {
+        width: 90%;
+        font-family: $raleway;
+        display: flex;
+        justify-content: flex-start;
+        font-weight: 500;
+      }
+      input {
+        outline: none;
+        height: 1.8rem;
+        width: 90%;
+        background-color: white;
+        font-size: 14px;
+        border: solid 1px;
+        border-color: rgb(214, 214, 214);
+        font-family: $comfortaa;
+        border-radius: 3px;
+        padding: 0.5rem;
+      }
+      input:focus {
+        border: 2px solid rgba(59, 130, 246, 0.5);
+      }
+    }
+    .termosDeAcordo, .receive-emails {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      div {
+        display: flex;
+        width: 90%;
+        margin: 0.5rem 0 0.5rem 0;
+        a {
+          font-family: $raleway;
+          font-size: 12px;
+          font-weight: 400px;
+          text-decoration: none;
+          margin: 0 0 0 0.5rem;
+        }
+        p {
+          font-family: $raleway;
+          font-size: 12px;
+          font-weight: 400px;
+          text-decoration: none;
+          margin: 0 0 0 0.5rem;
+        }
+      }
+    }
+  }
+  .submit {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0 1.5rem 0;
+    .submitButton {
+      outline: none;
+      border: none;
+      background-color: #f2812f;
+      min-height: 2rem;
+      min-width: 6rem;
+      border-radius: 2rem;
+      color: white;
+      font-family: $raleway;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                  0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      cursor: pointer;
+    }
+    .submitButton:hover {
+      background-color: #839E3E;
+    }
+    div {
+      position: relative;
+      app-form-errors {
+        position: absolute;
+        left: 0rem;
+        bottom: 2rem;
+      }
+      img {
+        width: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+    }
+    .deleteButton {
+      outline: none;
+      border: none;
+      font-family: $raleway;
+      color: $main-orange;
+      cursor: pointer;
+      background-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+<main class="global">
+  <section class="course">
+    <div class="cape">
+      <div class="title">
+        <h2>{{ course.title }}</h2>
+        <h3>{{ course.subtitle }}</h3>
+        <div class="buy-it">
+          <a href="{{course.course_url}}" target="_blank">
+            <button>Compre Já</button>
+          </a>
+        </div>
+      </div>
+      <div class="trailer">
+        <video controls>
+          <source *ngIf="course.trailer_link" src="../../../assets/videos/{{course?.trailer_link}}.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="about">
+      <div class="header">
+        <h2>Sobre o Curso</h2>
+      </div>
+      <div class="triple-division">
+        <div class="objective">
+          <div class="title">
+            <h4>Objetivo</h4>
+          </div>
+          <P style="text-align: center;">{{ course.objective }}</P>
+        </div>
+        <div class="triple-separator"></div>
+        <div class="includes">
+          <div class="title">
+            <h4>Incluso</h4>
+          </div>
+          <ul>
+            <li *ngFor="let included of course.includes">
+              <img src="../../../assets/icons/check-circle.svg">
+              <p>{{ included }}</p>
+            </li>
+          </ul>
+        </div>
+        <div class="triple-separator"></div>
+        <div class="details">
+          <div class="title">
+            <h4>Detalhes</h4>
+          </div>
+          <ul>
+            <li *ngFor="let detail of course.details">
+              <img src="../../../assets/icons/check-circle.svg">
+              <p>{{ detail }}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="characteristics">
+        <div *ngFor="let characteristic of courseCharacteristics" class="grid-cell">
+          <div class="characteristic">
+            <h4 (click)="showCharacteristicList($event)">{{ characteristic.text }}</h4>
+            <div class="list">
+              <ul class="answers">
+                <li *ngFor="let info of characteristic.infos">
+                  <app-bullet-point></app-bullet-point>
+                  <p>{{ info }}</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-title">
+      <h2>Conteúdos</h2>
+    </div>
+    <app-scrollable-content [modules]="course.modules" [type]="'course_module'" [element_width]="280"></app-scrollable-content>
+    <div class="buy-button">
+      <div class="custom-buy-button">
+        <a href="{{course.course_url}}" target="_blank">
+          <button>Quero ser mais produtivo!</button>
+        </a>
+      </div>
+    </div>
+    <div class="evaluate">
+      <h2>Avaliações</h2>
+    </div>
+    <app-scrollable-content [evaluations]="evaluations" [type]="'course_evaluation'" [element_width]="570"></app-scrollable-content>
+  </section>
+</main>
+

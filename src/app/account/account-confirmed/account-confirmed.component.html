@@ -1,0 +1,19 @@
+<div class="confirm">
+  <div *ngIf="type === 'recover'">
+    <h1>Conta recuperada com sucesso!</h1>
+    <p>Aproveita sua experiência Ibidem.</p>
+  </div>
+  <div *ngIf="type !== 'recover'">
+    <h1>Enviamos um email para você.</h1>
+    <p>Abra-o para confirmar sua conta Ibidem! <br> Atenção, a validação tem um prazo máximo de 1 dia!!! <br> Cheque a sua caixa de Spam caso não tenha encontrado.</p>
+  </div>
+
+  <div class="back-to-home">
+    <img
+      src="/assets/logos/logo-copia-menor.jpeg"
+      alt="Logo do site"
+      class="logo"
+      (click)="navigateTo('/home')"
+    >
+  </div>
+</div>

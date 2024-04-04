@@ -1,0 +1,25 @@
+<section class="popup" *ngIf="show" (click)="closePopup($event)">
+  <div class="body">
+    <div class="title">
+      <img src="../../../../assets/logos/logo-copia-menor-sem-sombra.jpeg">
+      <h3>{{ title }}</h3>
+    </div>
+    <div class="text">
+      <p>Olá, percebemos que você tem interesse em saber mais sobre o curso <span style="color: #f2812f;">{{ courseTitle }}</span>, mas infelizmente ele ainda não está disponível. Caso queira ser avisado quando ele estiver, coloque seu email abaixo:</p>
+    </div>
+    <form class="form" (submit)="onSubmit()" [formGroup]="emailForm">
+      <div class="entry">
+        <p>Email</p>
+        <div class="input">
+          <input type="text" formControlName="email">
+          <img *ngIf="!emailForm.valid" src="../../../../assets/icons/alert-triangle.svg">
+          <img *ngIf="emailForm.valid" src="../../../../assets/icons/check-circle.svg">
+        </div>
+      </div>
+      <button type="submit" *ngIf="!showPopupResponse" [disabled]="!emailForm.valid">Enviar</button>
+      <div class="reponse" *ngIf="showPopupResponse">
+        <p>{{ popupResponse }}</p>
+      </div>
+    </form>
+  </div>
+</section>
